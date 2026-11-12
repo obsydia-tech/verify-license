@@ -1,0 +1,18 @@
+{
+  "tenant_id": "golden-pro",
+  "tier": "pro",
+  "node_count": 6,
+  "issued_at": 1790766278,
+  "expires_at": 2106126278,
+  "features": [
+    "pii",
+    "keys",
+    "bridge",
+    "audit",
+    "export",
+    "monitoring",
+    "file_storage"
+  ],
+  "mode": "selfhosted",
+  "signature": "bjwvjRHhWPQ8k8qKri9m/HNb5bu4YM2qIxJk+u4pSRfpFQNXR76j2oXX9ohR2m8Wl55dNrb8sRJbLuRZU2xlWw=="
+}

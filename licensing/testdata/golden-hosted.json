@@ -1,0 +1,20 @@
+{
+  "tenant_id": "golden-hosted",
+  "tier": "enterprise",
+  "node_count": 10,
+  "issued_at": 1790766278,
+  "expires_at": 2106126278,
+  "features": [
+    "pii",
+    "keys",
+    "bridge",
+    "audit",
+    "export",
+    "monitoring",
+    "file_storage",
+    "ha"
+  ],
+  "mode": "hosted",
+  "bridge_endpoint": "https://bridge.example.invalid",
+  "signature": "HgSPc5wR2lJCTOutd8o8559tKAyr/WVVFVHwiMm2GbnxhurS2FBn4BqoYqRPTJvqcohY+uQYitgSnbyQ9UvBqQ=="
+}

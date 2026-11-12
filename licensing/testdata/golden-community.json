@@ -1,0 +1,16 @@
+{
+  "tenant_id": "golden-community",
+  "tier": "community",
+  "node_count": 1,
+  "issued_at": 1790766278,
+  "expires_at": 2106126278,
+  "features": [
+    "pii",
+    "keys",
+    "bridge",
+    "audit",
+    "export"
+  ],
+  "mode": "selfhosted",
+  "signature": "+BcI+GSAGPXJVXDzVu83KqRJc5ptaAsfzBJcUPkaHDbFdS9Z8cL5KS4OISaFLdn98sbMQfRclYWETGuc++mbEw=="
+}
