@@ -10,21 +10,29 @@ The `licensing` package in this repository is byte-for-byte the package Obsydia 
 
 ```
 -----BEGIN PUBLIC KEY-----
-MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzYGU1Ji99u9d6h504CbcQv10v+m5
-1m3wX+zex+Pf2nPb9DfUFsjZhH++T0EmiSQ73awx/cOoF2guXTKttVoN7w==
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExvBTKh0VgaO/sVpRmYvv+pcA3vCg
+5KV/KtWphKZEnvD4VmzvP9ccJscMxUFC6vvHoS39LTeDSUXs8oTtjnxs7w==
 -----END PUBLIC KEY-----
 ```
 
 | Fingerprint | SHA-256 |
 | --- | --- |
-| SubjectPublicKeyInfo (DER) | `6552321b452262cc131c30141a93d812b426e8cbea94869a8f2556070ad01f06` |
-| PEM file | `b32e5dc5efda3a708e934ce71775c4721d5a4b0f939eace5a42913148e4a9726` |
+| SubjectPublicKeyInfo (DER) | `e3b0779ac345157152648dde2df3eb83c9ddce1678a386fb56e527b93139b83f` |
+| PEM file | `6a77a37e5dfbd5c247667d8c5681e07e1c7b9ae7365fad55b0f9ff021a013b34` |
 
 This key is embedded in `verify-license`. Print it with `verify-license -show-key`, or check it yourself:
 
 ```
 openssl pkey -pubin -in obsydia_license.pub -outform DER | sha256sum
 ```
+
+### Revoked keys
+
+Licences signed with these keys are not valid. Current Core0 releases do not accept them.
+
+| Revoked | SubjectPublicKeyInfo (DER) SHA-256 | PEM file SHA-256 |
+| --- | --- | --- |
+| 2026-11-23 | `6552321b452262cc131c30141a93d812b426e8cbea94869a8f2556070ad01f06` | `b32e5dc5efda3a708e934ce71775c4721d5a4b0f939eace5a42913148e4a9726` |
 
 ## Install
 
@@ -62,7 +70,7 @@ expires:     2027-09-30 11:04 UTC (322 days left)
 grace until: 2027-10-14 11:04 UTC (14 days)
 format:      v1
 modules:     pii, keys, bridge, audit, export, monitoring, file_storage
-key:         embedded Obsydia key (spki sha256 6552321b...)
+key:         embedded Obsydia key (spki sha256 e3b0779a...)
 signature:   valid
 LICENSE VALID
 ```
