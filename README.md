@@ -48,6 +48,18 @@ Or build from source (Go 1.22 or newer):
 go install github.com/obsydia-tech/verify-license/cmd/verify-license@latest
 ```
 
+To reproduce a release binary byte for byte, build it from the release tag with the toolchain and flags used for the release:
+
+```
+git clone https://github.com/obsydia-tech/verify-license.git
+cd verify-license
+git checkout v1.1.0
+GOTOOLCHAIN=go1.25.3 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -o verify-license-linux-amd64 ./cmd/verify-license
+sha256sum verify-license-linux-amd64
+```
+
+The sum matches the one in `SHA256SUMS` of that release. `go version -m verify-license-linux-amd64` shows the version and the git revision it was built from.
+
 ## Usage
 
 ```
